@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import globalStyles from './globalStyles'
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';  
+import 'bootstrap/dist/js/bootstrap.bundle';
+import Navbar from './components/Navbar';
+import MiddleSection from './components/MiddleSection';
+import FeaturedCourses from './components/FeaturedCourses';
+import PricingPlan from './components/PricingPlan';
+import Testimonials from './components/Testimonials';
+import SlickSlider from './components/SlickSlider';
+import Footer from './components/Footer';
+import Subscribe from './components/Subscribe';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+       <MiddleSection /> 
+       <Testimonials />
+       <Subscribe />
+       <PricingPlan />
+       <Footer />
+    </>
   );
 }
 
